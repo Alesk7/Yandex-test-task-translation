@@ -3,54 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="68dp">
+    android:layout_height="63dp">
 
         <TextView
             android:id="@+id/from_lng"
             android:layout_width="@dimen/lng_width"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
             android:text="te"
             android:textAlignment="center"
             android:textSize="@dimen/lng_size"
             android:textStyle="bold"
-            android:layout_marginLeft="8dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/translate_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
             android:maxLines="1"
             android:text="Hello"
             android:textColor="@android:color/background_dark"
             android:textSize="@dimen/text_size"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/from_lng"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/like_button"
-            android:layout_marginRight="8dp"
-            app:layout_constraintHorizontal_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/separator"
             android:layout_width="@dimen/lng_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
             android:text="|"
             android:textAlignment="center"
             android:textSize="3pt"
             android:textStyle="bold"
-            android:layout_marginTop="3dp"
-            app:layout_constraintTop_toBottomOf="@+id/from_lng"
-            android:layout_marginLeft="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginBottom="3dp"
             app:layout_constraintBottom_toTopOf="@+id/to_lng"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/from_lng"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -58,45 +57,44 @@
             android:layout_width="@dimen/lng_width"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
             android:text="st"
             android:textAlignment="center"
             android:textSize="@dimen/lng_size"
             android:textStyle="bold"
-            android:layout_marginLeft="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp" />
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/translated_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:maxLines="1"
             android:text="Прiвiт"
-            android:textColor="@android:color/background_dark"
             android:textSize="@dimen/text_size"
-            app:layout_constraintLeft_toRightOf="@+id/to_lng"
-            android:layout_marginLeft="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="6dp"
-            app:layout_constraintRight_toLeftOf="@+id/like_button"
-            android:layout_marginRight="8dp"
-            app:layout_constraintHorizontal_bias="0.0" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/to_lng"
+            app:layout_constraintRight_toLeftOf="@+id/like_button" />
 
         <com.like.LikeButton
             android:id="@+id/like_button"
             android:layout_width="70dp"
             android:layout_height="68dp"
             android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
             app:icon_size="30dp"
             app:icon_type="star"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="0dp"
-            app:layout_constraintVertical_bias="1.0"
-            android:layout_marginRight="2dp"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
